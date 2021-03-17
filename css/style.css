@@ -352,12 +352,12 @@ select {
   line-height:1.5;
 }
 
-.one-right .service-detail{
+.one-left .service-detail{
   margin-top:15px;
-  margin-left:73%;   
+  margin-left:70%;   
 }
 
-.one-right .service-detail a{
+.one-left .service-detail a{
   padding:5px 23px; 
   border: 1px black solid;
   font-size:12px;
@@ -410,12 +410,12 @@ select {
   line-height:1.5;
 }
 
-.service-detail{
+.two-right .service-detail{
   margin-top:15px;
-  margin-left:73%;   
+  margin-left:70%;   
 }
 
-.service-detail a{
+.two-right .service-detail a{
   padding:5px 23px; 
   border: 1px black solid;
   font-size:12px;
