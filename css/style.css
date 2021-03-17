@@ -1,0 +1,536 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+/* ここまでがリセットCSS */
+/* ヘッダー */
+.header {
+  height: 50px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 50px;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;  
+}
+
+/* メイン　⇒　アイキャッチ */
+#eyecatch{
+  height:600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size:cover;
+  background-position:center;
+  position: relative;
+}
+
+#eyecatch h1 {
+  position:absolute;
+  top:60%;
+  left:10%;
+  font-family:"游ゴシック";
+  font-size:40px;
+  font-style: oblique;
+  color:#ffffff;
+  
+}
+
+.news{
+  width:50%;
+  height:50px;
+  position:absolute;
+  right:0%;
+  bottom:0%;
+  display:flex;
+}
+
+#eyecatch dl{
+  width:80%;
+  padding:5px;
+  background-color:#ffffff;
+  font-size:12px;
+}
+
+#eyecatch dl dd{
+  text-indent:15px;
+  line-height:1.5;
+}
+
+#eyecatch p{
+  width:20%;
+  font-size:12px;
+  text-align: center;
+  padding-top:25px;
+  background-color:black;
+  color:#ffffff;
+}
+
+/* メイン　⇒　about */
+#about {
+  margin:0;
+  height:400px;
+  position: relative; 
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  background-color:black;
+}
+
+.about-left{
+  position:absolute;
+  left:20%;
+  top:30%;
+  flex-wrap: wrap;
+  width:54%;
+}
+
+.about-left h2{
+  margin-bottom: 30px;
+  font-size:20px;
+  color:#ffffff;
+}
+.about-left p{
+  position:absolute;
+  margin-bottom:25px;
+  line-height:1.5;
+  font-size:12px;
+  color:#ffffff;
+}
+
+.about-left a{
+  position:absolute;
+  margin-top:80px;
+  padding:10px 20px;
+  font-weight: bold;
+  font-size:12px;
+  text-decoration: none;
+  background-color:#ffffff;
+  color:black;
+}
+
+.about-right{
+  margin-left:55%;
+  margin-top:10%;
+}
+
+.about-right img{
+  width:80%;  
+}
+
+/* メイン　⇒　service */
+#service{
+  position:relative;
+  margin: 100px auto 0;
+  padding-top:20px;
+  padding-bottom:100px;
+  background-color:rgb(192, 186, 186);
+}
+
+#service h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* メイン　⇒　service上 */
+.service-one{
+  margin-bottom:50px;
+  display: flex;
+}
+
+.one-left{
+  position:absolute;
+  margin-left:16%;
+  margin-top:6%;
+  background-color:#ffffff;
+  width:35%;
+  padding:80px 65px;
+}
+
+.one-left h3{
+  font-size:13px;
+  font-weight:bold;
+}
+
+.one-left p{
+  margin-top:15px;
+  font-size: 13px;
+  line-height:1.5;
+}
+
+.one-right .service-detail{
+  margin-top:15px;
+  margin-left:73%;   
+}
+
+.one-right .service-detail a{
+  padding:5px 23px; 
+  border: 1px black solid;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration: none; 
+  color:black;
+}
+
+.one-right{
+  margin-top:10px;
+  margin-left:50%;
+}
+
+.one-right img{
+  width:100%;
+}
+
+/* メイン　⇒　service下 */
+.service-two{
+  margin-top:200px;
+  margin-bottom:50px;
+  display: flex;
+}
+
+.two-left{
+  margin-left:0%;
+}
+
+.two-left img{
+  width:50%;
+}
+
+.two-right{
+  position:absolute;
+  margin-left:39%;
+  margin-top:4%;
+  background-color:#ffffff;
+  width:35%;
+  padding:80px 65px;
+}
+
+.two-right h3{
+  font-size:13px;
+  font-weight:bold;
+}
+
+.two-right p{
+  margin-top:15px;
+  font-size: 13px;
+  line-height:1.5;
+}
+
+.service-detail{
+  margin-top:15px;
+  margin-left:73%;   
+}
+
+.service-detail a{
+  padding:5px 23px; 
+  border: 1px black solid;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration: none; 
+  color:black;
+}
+
+/* メイン　⇒　corporation */
+#corporation{
+  margin: 100px auto;
+  display: flex;
+  justify-content:space-between;
+}
+
+.company{
+  background:url(../img/company.jpeg) ;
+  background-size: cover;
+  background-position: center;
+  width:48%;
+  padding:80px 0;
+  text-align:center;
+}
+
+.recruit{
+  background:url(../img/recruit.jpg) ;
+  background-size: cover;
+  background-position: center;
+  width:48%;
+  padding:80px 0;
+  text-align:center;
+ }
+
+.company h2,
+.recruit h2{
+  font-size:25px;
+  color:#ffffff;
+}
+
+.company p,
+.recruit p{
+  font-size:12px;
+  margin-top:10px;
+  color:#ffffff;
+}
+
+/* メイン　⇒　faq */
+#faq{
+  margin-bottom:100px;
+}
+
+#faq p{
+  padding:45px 20px;
+  margin-left:15%;
+  width:67%;
+  background-color:black;
+  font-size:25px;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+#faq span{
+  font-size:12px;
+  margin-left:42%;
+  font-weight:normal;
+}
+
+/* メイン　⇒　contact */
+#contact{
+  padding:150px;
+  background-color:black;
+  text-align:center;
+  color:#ffffff;
+}
+
+#contact h2{
+  font-size:25px;
+  margin-bottom:15px;
+}
+
+#contact .inquiry{
+  font-size:14px;
+  font-weight:bold;
+}
+
+#contact h3{
+  font-size:28px;
+  margin:25px;
+  font-weight:normal;
+}
+
+#contact .note{
+  font-size:12px;
+  margin-bottom:30px;
+}
+
+#contact a{
+  padding:5px 23px; 
+  border: 1px #ffffff solid;
+  font-size:12px;
+  color:#ffffff;
+  text-decoration: none;  
+}
+
+/* フッター */
+#footer{
+  background-color:black;
+  /* height:300px; */
+}
+
+#footer p{
+  text-align:center;
+  line-height:1.5;
+  color:#ffffff;
+}
+
+
+
